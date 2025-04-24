@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1>MCQ Quiz</h1>
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">Submit</button>
+    <div id="report-container" style="display:none;"></div>
+    <script src="/static/script.js"></script>
+    <script>
+        const BOOKMARKED_MODE = {{ 'true' if bookmarked_mode else 'false' }};
+    </script>
+    <a href="/bookmarked">🔖 View Bookmarked Quiz</a>
+
+</body>
+</html>
